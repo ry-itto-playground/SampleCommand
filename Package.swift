@@ -17,6 +17,12 @@ let package = Package(
                 .product(name: "ArgumentParser", package: "swift-argument-parser")
             ]
         ),
+        .target(
+            name: "SampleSubCommands",
+            dependencies: [
+                .product(name: "ArgumentParser", package: "swift-argument-parser")
+            ]
+        ),
         .testTarget(
             name: "SampleCommandTests",
             dependencies: ["SampleCommand"]),
